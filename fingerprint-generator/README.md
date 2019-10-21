@@ -1,9 +1,8 @@
 Generating synthetic fingerprints
 ===============
 First, we need to do some preprocessing over our fingerprints. Our dataset is a little dirty, for example fingerprints are not alligned in the center of the images and they have lots of borders and stuff. Using the NBIS nfseq, we can crop them. Then, we can use the code of [WasserteinGan](https://github.com/martinarjovsky/WassersteinGAN) and do the modifications needed to input our dataset to it. After that, we can train our model and get result. Below you can see the readme for that repository. Also, you can use `crop_images_nfseq.py` script to crop all images. Just you need to install NBIS tools](https://www.nist.gov/itl/iad/image-group/products-and-services/image-group-open-source-server-nigos#Releases) beforehand and set path's correctly in the script.
-===============
-Wasserstein GAN
-===============
+
+# Wasserstein GAN
 
 Code accompanying the paper ["Wasserstein GAN"](https://arxiv.org/abs/1701.07875)
 
