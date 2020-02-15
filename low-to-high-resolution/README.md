@@ -1,6 +1,6 @@
 Making high resolution finger prints
 ===============
-The output of our generator is low quality fingerprints. We are going to use a super-resolution network to make them better. In order to do so, we need to train a network that make high resolution images from low resolution ones. For that, we need to create a low to high resolution dataset, which can be done by `create_HR_LR_images.py` in the fingerprint-generator folder. We can use [BasicSR](https://github.com/xinntao/BasicSR) repository to train our model. Here I have done changes needed in that code to train our model. By `python train.py -opt options/train/train_sr.json` command you can train the model [and applying changes needed in the code path). By `python test.py -opt options/test/test_sr.json` command you can get results from it. You can see the related readme of BasicSR below.
+I have used the [BasicSR](https://github.com/xinntao/BasicSR) repository for the super-resolution network. You can see the readme of the original repository below.
 
 # BasicSR [[ESRGAN]](https://github.com/xinntao/ESRGAN) [[SFTGAN]](https://github.com/xinntao/SFTGAN)
 
