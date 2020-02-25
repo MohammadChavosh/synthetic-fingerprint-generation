@@ -38,3 +38,11 @@ python test.py -opt options/test/test_sr.json
 ## Testing the outputs
 
 In order to test the results, there is a `extract_minutiae.py` script that can be used to extract minutiae of real images and fake ones. You just need to set pathes correctly in that. Then, you can train a classifier to assess quality of my fake images. If the classifier can distinguish fake images from real ones, the quality is not good. Code for a simple classifier is in the `Minutiae classifier.ipynb`. You need to have NBIS tools installed to extract minutiaes.
+
+## Citation
+@article{riazi2020synfi,
+  title={SynFi: Automatic Synthetic Fingerprint Generation},
+  author={Riazi, M Sadegh and Chavoshian, Seyed M and Koushanfar, Farinaz},
+  journal={arXiv preprint arXiv:2002.08900},
+  year={2020}
+}
