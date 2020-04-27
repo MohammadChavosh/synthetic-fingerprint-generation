@@ -19,7 +19,7 @@ python main.py --dataset fingerprints --dataroot path/to/sd09 --imageSize 64 --n
 ```
 Look at the `main.py` code to see different parameters that you can pass to the script.
 
-After training a generator, in order to generate as many low-quality fingeprints as you want, you need to use the `fingerprint-generator/generate.py` code. Here is an example of how you can use this command. `generator_config.json` is a file created by the training code which has generator configuration. `netG_epoch_X.pth` is the trained model where X shows the epoch number. The `generator_config.json` and `netG_epcoh_X.pth` is by default created under the `samples` folder (if you didn't path the `experiment` argument to the training code). Using `--output_dir` argument, you can define the path where the generated samples will be saved and the `--nimages` argument specifies the number of samples to be generated.
+After training a generator, in order to generate as many low-quality fingerprints as you want, you need to use the `fingerprint-generator/generate.py` code. Here is an example of how you can use this command. `generator_config.json` is a file created by the training code which has generator configuration. `netG_epoch_X.pth` is the trained model where X shows the epoch number. The `generator_config.json` and `netG_epcoh_X.pth` is by default created under the `samples` folder (if you didn't path the `experiment` argument to the training code). Using `--output_dir` argument, you can define the path where the generated samples will be saved and the `--nimages` argument specifies the number of samples to be generated.
 
 ```
 python generate.py --config generator_config.json --weights netG_epoch_X.pth --output_dir generated_samples/ --nimages 8192 --cuda
